@@ -13,7 +13,7 @@
 .skills-skill {
     font-weight: 500;
     font-size: 1.2rem;
-    box-shadow: 0 4px rgba(0,0,0,0.25);
+    box-shadow: var(--tag-shadow);
     border-radius: 42px;
     padding: 0.5em 0.7em;
     margin: 10px;

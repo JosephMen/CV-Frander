@@ -26,7 +26,7 @@
     font-size: 2rem;
     font-weight: bold;
     margin: 0;
-    color: var(--primary-color);
+    color: var(--accent-color);
     font-family: 'Noto Sans', sans-serif;
 }
 .profile-details{
@@ -38,8 +38,8 @@
 }
 
 .profile-btn{
-    background-color: var(--primary-color);
-    color: var(--text-color-inverse);
+    background-color: var(--accent-color);
+    color: var(--theme-color);
     font-size: 20px;
     border: none;
     border-radius: 7px;
