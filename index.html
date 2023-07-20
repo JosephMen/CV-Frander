@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="png" href="public/CV.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/experiences.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <title>Curriculum</title>
+  </head>
+  <body>
+    <header class="top-header">
+      <nav class="top-nav">
+        <a href="#" class="logo"> 
+          <img src="./public/perfil.png" 
+          alt="perfil picture" 
+          height="50" 
+          width="50"
+          class="logo"
+          >
+          <div>
+            Frander Mena Sandoval <br />
+            Ingeniero en ciencias de la computación
+          </div>
+        </a>
+
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="/public/hamburguer.svg" height="40" width="40" alt="abrir menú">
+        </button>
+
+        
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="/public/quit.svg" height="40" width="40" alt="cerrar menú">
+          </button>
+          <li class="seccion"><a class="selected" href="#contacto">Contacto</a></li>
+          <li class="seccion"><a href="#perfil">Perfil</a></li>
+          <li class="seccion"><a href="#experiencias">Experiencia</a></li>
+          <li class="seccion"><a href="#habilidades">Habilidades</a></li>
+          <li class="seccion"><a href="#proyectos">Proyectos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="horizontal-padding vertical-padding">
+      <section class="profile" id="perfil">
+        <div class="profile-info">
+          <h1 class="profile-title">Hola, soy  <br />
+            Frander Joseph Mena</h1>
+          <p  class="profile-details">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus,
+            dignissimos! Laboriosam saepe perferendis molestiae iste tenetur.
+            Enim exercitationem nisi quia, sunt velit voluptatem, rerum aut officiis
+            praesentium, quidem ducimus dolor?
+          </p>
+          <button class="profile-btn">Curriculum</button>
+        </div>
+        <div class="profile-img-section">
+          <img class="profile-img" src="/public/recorte.png" alt="profile picture"/>
+          <div class="profile-img-line"></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="experiences" id="experiencias">
+      <img src="/public/wave.svg" alt="curvas" class="wave">
+      <div class="experiences-body">
+        <h2 class="experiences-title">Experiencias</h2>
+        <div class="experiences-grid">
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="experience">
+            <div class="experience-date">2023</div>
+            <div class="experience-company">Tecoop.cr</div>
+            <div class="experience-position">.NET Developer</div>
+            <div class="experience-description">
+              Lorem ipsum dolor sit amet, 
+              consectetur adipisicing elit. Neque earum unde porro, facilis 
+              perferendis libero temporibus? Placeat, suscipit explicabo. 
+              Eos nihil ratione soluta eum eius ducimus corrupti quos illum 
+              doloribus.
+            </div>
+          </div>
+
+          <div class="experience experience-left">
+            <div class="experience-date">2023</div>
+            <div class="experience-company">Tecoop.cr</div>
+            <div class="experience-position">.NET Developer</div>
+            <div class="experience-description">
+              Lorem ipsum dolor sit amet, 
+              consectetur adipisicing elit. Neque earum unde porro, facilis 
+              perferendis libero temporibus? Placeat, suscipit explicabo. 
+              Eos nihil ratione soluta eum eius ducimus corrupti quos illum 
+              doloribus.
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="empty"></div>
+
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="experience ">
+            <div class="experience-date">2023</div>
+            <div class="experience-company">Tecoop.cr</div>
+            <div class="experience-position">.NET Developer</div>
+            <div class="experience-description">
+              Lorem ipsum dolor sit amet, 
+              consectetur adipisicing elit. Neque earum unde porro, facilis 
+              perferendis libero temporibus? Placeat, suscipit explicabo. 
+              Eos nihil ratione soluta eum eius ducimus corrupti quos illum 
+              doloribus.
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="/public/wave.svg" alt="curvas" class="wave wave-bottom">
+    </section>
+
+    <div class="horizontal-padding vertical-padding">
+      <section class="skills" id="habilidades">
+        <h2 class="skills-title">Habilidades</h2>
+        <ul class="skills-list">
+          <li class="skills-skill">Javascript</li>
+          <li class="skills-skill">Typescript</li>
+          <li class="skills-skill">CSS</li>
+          <li class="skills-skill">HTML</li>
+          <li class="skills-skill">React</li>
+          <li class="skills-skill">.NET</li>
+          <li class="skills-skill">C#</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="horizontal-padding vertical-padding">
+      <section class="contact" id="proyectos">
+        <h2 class="contact-title">Contacto</h2>
+        <div class="contact-detail">
+          <div class="contact-detail-group">
+            <p class="contact-label">Dirección</p>
+            <p class="contact-text">Limón, Costa Rica</p>
+          </div>
+
+          <div class="contact-detail-group">
+            <p class="contact-label">Email</p>
+            <p class="contact-text">franderms@gmail.com</p>
+          </div>
+
+          <div class="contact-detail-group">
+            <p class="contact-text">Puedes dejar un mensaje</p>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <div class="contact-form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+
+          <div class="contact-form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="contact-form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea type="text" id="mensaje" name="mensaje" rows="6" required>
+            </textarea>
+          </div>
+
+          <button type="submit" class="contact-form-submit">Enviar</button>
+        </form>
+        <nav class="social">
+          <ul class="social-list">
+            <li><a href="#"><img height="40px" width="40px" src="/public/contactos/github.svg" alt="github icon"></a></li>
+            <li><a href="#"><img height="40px" width="40px" src="/public/contactos/linkedin.svg" alt="linkedin icon"></a></li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+
+    <script src="/js/index.js">
+      
+    </script>
+  </body>
+</html>

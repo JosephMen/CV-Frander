@@ -1,0 +1,127 @@
+.top-header{
+    box-shadow: 0 4px 5px var(--navbar-shallow-color);
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--theme-color);
+    z-index: 100;
+}
+.top-nav{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.logo img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    /* flex-wrap: wrap;  */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 0 15px;
+}
+.menu a {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+}
+.menu a::after {
+    content: "";
+    position:absolute;
+    left: 0;
+    top: calc( 100% + 4px);
+    width: 100%;
+    height: 4px;
+    background-color: var(--secondary-color);
+    opacity: 0;
+    transition: opacity 0.3s
+}
+
+.menu a.selected::after,
+.menu a:hover::after{
+    opacity: 0.8;
+}
+.menu a:hover {
+    color: var(--primary-color)
+}
+
+.open-menu, .close-menu {
+    display: none;
+}
+
+@media (max-width: 950px){
+    
+    .menu {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        background-color: var(--menu-mobile-background-color);
+        overflow-y: auto;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+
+    .menu li {
+        padding: 0;
+    }
+    .menu a {
+        color: var(--text-color-inverse);
+        line-height: 60px;
+    }
+
+    .open-menu, .close-menu {
+        display: block;
+        border: none;
+        cursor: pointer;
+        background: none;
+    }
+    .close-menu{
+        align-self: flex-end;
+        padding: 30px 15px;
+    }
+    .menu-opened{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .menu a::after {
+        content: none;
+    }
+    
+    .menu a:hover,
+    .menu a.selected {
+        color: var(--secondary-color)
+    }
+
+    .open-menu:focus:not(:focus-visible),
+    .close-menu:focus:not(:focus-visible){
+        outline: none;
+    }
+}
